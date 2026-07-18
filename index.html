@@ -285,7 +285,7 @@
           </div>
           <label>
             I am contacting you about
-            <select name="reason">
+            <select name="servicetype">
               <option>Consulting project</option>
               <option>Full-time opportunity</option>
               <option>Contract role</option>
@@ -296,9 +296,8 @@
             Message
             <textarea name="message" rows="5" placeholder="Tell me about the opportunity or challenge..." required></textarea>
           </label>
+          <p class="form-note" id="formNote" role="alert" aria-live="polite"></p>
           <button type="submit" class="btn btn-primary">Send inquiry</button>
-          <!-- <p class="form-note" id="formNote">Demo form only. Connect it to Formspree, EmailJS, n8n, or your own API.</p>
-         -->
         </form>
       </div>
     </section>
@@ -312,13 +311,14 @@
       </div>
       <div class="footer-links">
         <a href="#home">Top</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/esaie-mpoyi/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
       </div>
       <p>© <span id="year"></span> All rights reserved.</p>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
